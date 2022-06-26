@@ -1,0 +1,58 @@
+@import "global.css";
+/* подключаем хэдер, ресет и шрифты */
+body{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+main{
+  pointer-events: none;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+#lines{
+  grid-column: 1;
+  grid-row: 1;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+#lines > img{
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: fill;
+  z-index: 999;
+  filter: blur(2px);
+}
+.container {
+  pointer-events: none;
+  grid-column: 1;
+  grid-row: 1;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  pointer-events: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-image: url("images/MainImages/MainImg0.png"); */
+  /* background-color: deeppink; */
+  height: 750px;
+  width: 1400px;
+  position: absolute;
+}
