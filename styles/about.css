@@ -66,12 +66,15 @@ body{
   filter: opacity(0.13);
 }
 .zine{
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   align-items: center ;
 }
 .zine > img{
+  object-fit: cover;
+  height: 100%;
   grid-row: 1;
   grid-column: 1;
   width: 100%;
