@@ -44,3 +44,15 @@ table {
 a{
 	text-decoration: none;
 }
+button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: #ffffff;
+}

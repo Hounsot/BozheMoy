@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width">
     <title>Афиша</title>
     <!-- подключаем css  -->
-    <link href="about.css" rel="stylesheet" type="text/css" />
+    <link href="styles/about.css" rel="stylesheet" type="text/css" />
     <!-- подключаем из интернета -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- подключаем локально -->
     <!-- <script src="javascripts/jquery-3.6.0.js" charset="utf-8"></script> -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="AboutScript.js" charset="utf-8"></script>
+    <script src="app/AboutScript.js" charset="utf-8"></script>
   </head>
   <body>
     <section id="overleap">
       <header>
         <nav>
-        <a href="starting.html"><p id="logo">BozheMoy</p></a>
+        <a href="index.html"><p id="logo">BozheMoy</p></a>
         <div id="navigation_buttons">
           <a href="affiche.html"><p id="Affiche">афиша</p></a>
           <a href="shop.html"><p href="shop.html" id="Shop">магазин</p></a>
@@ -32,34 +32,51 @@
         </video>
       </section>
     </section>
-    <div id="bound-one">
+    <div id="opening_text_block">
+      <div class="contentOL">
       <div class="content">
+        <h3 class="subtitleStickyStyle">Фестивальная зона включает в себя<br>
+          три самостоятельные секции:<br>
+          пустыня скитаний, загробный город <br>
+          и зона с вратами между мирами.<br>
+          Обьединяют эти секции два портала.
+                    </h3>    
+      </div>
+    <div id="bound-one">
+      <div class="contentOL">
+      <div class="content">
+        <img src="images/Group 67.png" alt="">
         <video>
-          <source src="images/Floating_3.mp4">
+          <source src="images/Floating_2.mp4">
         </video>
-        <!-- <h3 id="lol">Пространство представляет<br>
-          из себя набор их трех полностью<br>
-          самостоятельных секций, через<br>
-          которые предстоит пройти грешной<br>
-          душе, чтобы искупить свой грех.</h3>   -->
+        <h3 class="subtitleStickyStyle">Передвижение по пространству<br>
+                    происходит на речной лодке, <br>
+                    кимбии, управляет которой<br>
+                    молчаливый перевозчик душ.<br>
+                    </h3>    
       </div>
     </div>
-    <section class="wow1">
-      <h3 id="lol">You can fly through<br>
-      edits in Adobe<br>
-      Lightroom and easily<br>
-      work with massive<br>
-      100-megapixel<br>
-      images.</h3>
+    </div> 
+      <div class="zine">
+      <img src="images/Group 75.png" alt="">
+      <h3 class="subtitleStickyStyle notStickyFooter" style="z-index: 2;">Так же у нас есть специальный зин,<br>
+        который составит вам отличную <br>
+        компанию на фестивале. Можно<br>
+        узнать из него, что вы встретите<br>
+        в каждой зоне и многое другое.<br></h3>
+       <a class="subtitleStickyStyle notStickyFooter zineLink" target="_blank" href="https://en.calameo.com/read/00704111434143a65114b" style="border-bottom: 1.2px solid currentColor; padding-bottom: 0px; margin-bottom: -350px">Онлайн версия</a>
+        </div>
     </section>
-    <section class="wow2">
-      <h3 id="lol">That means Safari is<br>
-      faster than ever and<br>
-      you can browse with<br>
-      hundreds of tabs open<br>
-      at once.</h3>
-    </section>
-    <section class="wow3">
+    <section id="promo_videos">
+      <h3 class="subtitleStickyStyle notStickyFooter">Промо-ролики</h3>
+      <iframe class="promo firstPromo idle" title="vimeo-player" src="https://player.vimeo.com/video/657766603?h=dbd1ef3653" frameborder="0" allowfullscreen></iframe>
+      <iframe class="promo secondPromo idle" title="vimeo-player" src="https://player.vimeo.com/video/724229874?h=751d9d212e" frameborder="0" allowfullscreen></iframe>
+      <div id="buttons_footer">
+        <button class="default firstReel">
+        </button>
+        <button class="secondReel">
+        </button>
+      </div>
     </section>
 
 
