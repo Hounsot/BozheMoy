@@ -1,0 +1,4 @@
+@import "global.css";
+/* подключаем хэдер, ресет и шрифты */
+@import "startingContent.css";
+@import "adaptives/startingAdaptive.css";

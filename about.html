@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Афиша</title>
     <!-- подключаем css  -->
-    <link href="styles/about.css" rel="stylesheet" type="text/css" />
+    <link href="styles/aboutStyles.css" rel="stylesheet" type="text/css" />
     <!-- подключаем из интернета -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- подключаем локально -->
@@ -16,18 +16,24 @@
   <body>
     <section id="overleap">
       <header>
-        <nav>
-        <a href="index.html"><p id="logo">BozheMoy</p></a>
+      <nav class="default_navigation">
+        <div class="logo_and_toggle">
+      <p id="logo"”>BozheMoy</p>
+      <div class="toggle">
+        <span class="menu">
+        </span>
+      </div>
+    </div>
         <div id="navigation_buttons">
-          <a href="affiche.html"><p id="Affiche">афиша</p></a>
-          <a href="shop.html"><p href="shop.html" id="Shop">магазин</p></a>
-          <p>о нас</p>
-          <a href="contacts.html"><p id="Contacts">контакты</p></a>
-        </div>
+        <a id="Affiche" href="affiche.html"><p>афиша</p></a>
+        <a href="shop.html" id="Shop" ><p>магазин</p></a>
+        <a id="aboutUs" href="about.html"><p>о нас</p></a>
+        <a href="#" id="Contacts" ><p>контакты</p></a>
+      </div>
       </nav>
       </header>
       <section id="start">
-        <video class="videoBG" width="100%" height="auto" autoplay="" loop="" muted="" playsinline="">
+        <video class="videoBG" autoplay="" loop="" muted="" playsinline="">
           <source src="images/FinalVideo.mp4" type="video/mp4">
         </video>
       </section>

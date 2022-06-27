@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px){
+    body{
+        max-height: 100vh;
+    }
+    header{
+        height: 37%;
+        z-index: 9999999;
+        width: 100%;
+    }
+    nav{
+        height: 56px;
+        overflow: hidden;
+        position: fixed;
+        top: 46px;
+        left: 6%;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 88%;
+        justify-content: normal;
+        gap: 8%;
+        background-color: black;
+        transition: all .15s;
+    }
+    .open_navigation{
+         height: 40%;
+         transition: all .15s;
+    }
+    .logo_and_toggle{
+        margin-top: 1%;
+        gap: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #navigation_buttons{
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-left: 3%;
+    }
+    #logo{
+        /* margin-left: 0%;
+        margin-top: 2%; */
+    }
+    .toggle{
+        line-height: 46px;
+        width: auto;
+        transition: all 1s;
+    }
+    .menu{
+        height: 2px;
+        background-color: white;
+        width: 36px;
+        display: inline-block;
+        position: relative;
+        top: -1px;
+        vertical-align: middle;
+        transition: all .15s ease;
+    }
+    .menu:before{
+        content: '';
+        height: 2px;
+        background-color: white;
+        width: 36px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -8px;
+        vertical-align: middle;
+        transition: all .15s ease;
+    }
+    .menu:after{
+        content: '';
+        height: 2px;
+        background-color: white;
+        width: 36px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        vertical-align: middle;
+        transition: all .15s ease;
+    }
+
+    .open_menu > .menu:after{
+        top: 0;
+        transform: rotate(45deg);
+        transition: .15s ease-in-out;
+    }
+    .open_menu > .menu:before{
+        top: 0;
+        transform: rotate(-45deg);
+        transition: .15s ease-in-out;
+    }
+    .open_menu > .menu{
+        background: transparent;
+        transition: all .15s ease;
+    }
+    .videoBG{
+        height: 100% !important;
+        display: none;
+        object-fit: cover !important;
+    }
+}

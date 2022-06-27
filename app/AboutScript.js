@@ -33,6 +33,10 @@ $(document).ready(function(){
         $('.thirdPromo').addClass('chosen');
       }
     })
-
+    $(".toggle").click(function(){
+      $(".toggle").toggleClass("open_menu");
+      $(".default_navigation").toggleClass("open_navigation");
+    })
+  
 })
 

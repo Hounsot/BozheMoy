@@ -1,4 +1,3 @@
-@import "global.css";
 /* подключаем хэдер, рессет и шрифты */
 body{
   width: 100vw;
@@ -10,6 +9,9 @@ body{
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 1;
+}
+.videoBG{
+  max-width: 100%;
 }
 #bound-one{
   width: 100%;
@@ -47,8 +49,8 @@ body{
   align-items: center;
 }
 .content > video{
-  width: 100%;
-  /* height: 100%; */
+  /* width: 100%; */
+  height: 100%;
   grid-row: 1;
   grid-column: 1;
 }
