@@ -202,3 +202,127 @@
         align-self: center;
     }
 }
+@media screen and (max-width: 768px){
+    header{
+        height: 37%;
+        z-index: 9999999;
+        width: 100%;
+    }
+    .not_so_free_now{
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr;
+    }
+    .not_so_free_now > *{
+      position: relative;
+      top: auto;
+      right: auto;
+      left: auto;
+    }
+    .goods {
+      z-index: ;
+      transform: scale(1);
+    }
+    nav{
+      z-index: 9999999;
+        height: 56px;
+        overflow: hidden;
+        position: fixed;
+        top: 46px;
+        left: 6%;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 88%;
+        justify-content: normal;
+        gap: 5%;
+        /* background-color: black; */
+        transition: all .15s;
+    }
+    .open_navigation{
+         height: 50%;
+         transition: all .15s;
+    }
+    .logo_and_toggle{
+        align-self: center;
+        margin-top: 1%;
+        /* gap: 60%; */
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #logo{
+        font-size: 34px;
+    }
+    #navigation_buttons{
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-left: 5%;
+      }
+    .toggle{
+        line-height: 46px;
+        width: auto;
+        transition: all 1s;
+    }
+    .menu{
+        height: 2px;
+        background-color: white;
+        width: 36px;
+        display: inline-block;
+        position: relative;
+        top: -1px;
+        vertical-align: middle;
+        transition: all .15s ease;
+    }
+    .menu:before{
+        content: '';
+        height: 2px;
+        background-color: white;
+        width: 36px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -8px;
+        vertical-align: middle;
+        transition: all .15s ease;
+    }
+    .menu:after{
+        content: '';
+        height: 2px;
+        background-color: white;
+        width: 36px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        vertical-align: middle;
+        transition: all .15s ease;
+    }
+    .open_menu > .menu:after{
+        top: 0;
+        transform: rotate(45deg);
+        transition: .15s ease-in-out;
+    }
+    .open_menu > .menu:before{
+        top: 0;
+        transform: rotate(-45deg);
+        transition: .15s ease-in-out;
+    }
+    .open_menu > .menu{
+        background: transparent;
+        transition: all .15s ease;
+    }
+    .logo_and_toggle > a{
+        align-self: center;
+    }
+}
+@media screen and (max-width: 414px){
+  .goods{
+    left: auto;
+    right: auto;
+  }
+  .goods > img{
+    max-width: 100%;
+  }
+}
