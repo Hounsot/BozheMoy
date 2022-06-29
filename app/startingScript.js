@@ -47,5 +47,6 @@ $(document).ready(function(){
   $(".toggle").click(function(){
     $(".toggle").toggleClass("open_menu");
     $(".default_navigation").toggleClass("open_navigation");
+    $("#help").toggleClass("open_navigation_blur");
   })
 });

@@ -1,21 +1,9 @@
 $(document).ready(function(){
-  $(".box").hover(function(){
-    var boxWidth = $(this).width();
-    var boxHeight = $(this).height();
-    var boxWidthHover = boxWidth + boxWidth;
-    var boxHeightHover = boxHeight;
-    console.log(boxWidth);
-    console.log(boxHeight);
-    $(this).animate({
-      width: `${boxWidthHover}px`,
-      height: `${boxHeightHover}px`
-    }, 1000);
-  }, function(){
-    $(this).animate({
-      width: `${boxWidth}px`,
-      height: `${boxHeight}px`
-    })
-  });
+  $(".toggle").click(function(){
+    $(".toggle").toggleClass("open_menu");
+    $(".default_navigation").toggleClass("open_navigation");
+    $(".not_so_free_now").toggleClass("open_navigation_blur")
+  })
 })
 // $(document).ready(function(){
 //   $('.box').hover(function(){

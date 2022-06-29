@@ -1,4 +1,35 @@
-@media screen and (max-width: 768px) and (orientation: portrait){
+@media screen and (max-width: 1440px){
+    .subtitleStickyStyle{
+    font-size: 25px;
+    }
+    .zineLink{
+        width: 190px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .promo{
+        min-width: 1000px;
+    }
+    #buttons_footer{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .videoBG{
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    .promo{
+        min-width: 860px;
+    }
+    #buttons_footer{
+        margin-top: -40px;
+    }
+    #logo{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 768px){
     body{
         max-height: 100vh;
     }
@@ -18,7 +49,7 @@
         width: 88%;
         justify-content: normal;
         gap: 8%;
-        background-color: black;
+        /* background-color: black; */
         transition: all .15s;
     }
     .open_navigation{
@@ -26,22 +57,22 @@
          transition: all .15s;
     }
     .logo_and_toggle{
+        align-self: center;
         margin-top: 1%;
-        gap: 60%;
-        width: 100%;
+        /* gap: 60%; */
+        width: 90%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    #logo{
+        margin-top: 2%;
     }
     #navigation_buttons{
         justify-content: flex-start;
         flex-direction: column;
-        margin-left: 3%;
-    }
-    #logo{
-        /* margin-left: 0%;
-        margin-top: 2%; */
-    }
+        margin-left: 5%;
+}
     .toggle{
         line-height: 46px;
         width: auto;
@@ -98,7 +129,29 @@
     }
     .videoBG{
         height: 100% !important;
-        display: none;
         object-fit: cover !important;
+    }
+    .promo {
+        min-width: 640px;
+    }
+    #buttons_footer{
+        margin-top: -200px;
+    }
+}
+@media screen and (max-width: 414px) {
+    #logo{
+        font-size: 34px;
+    }
+    .logo_and_toggle > a{
+        align-self: center;
+    }
+    #navigation_buttons{
+        margin-left: 5.5%;
+    }
+    header p {
+        font-size: 30px;
+    }
+    .promo {
+        min-width: 400px;
     }
 }

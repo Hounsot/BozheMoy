@@ -36,6 +36,8 @@ $(document).ready(function(){
     $(".toggle").click(function(){
       $(".toggle").toggleClass("open_menu");
       $(".default_navigation").toggleClass("open_navigation");
+      $("#opening_text_block").toggleClass("open_navigation_blur");
+      $("#overleap").toggleClass("open_navigation_blur");
     })
   
 })
