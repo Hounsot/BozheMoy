@@ -75,8 +75,10 @@ body{
     color: white;
     background-color: black;
     display: block;
-    width: 460px;
+    min-width: 460px;
+    width: 80%;
     position: relative;
+    margin: 10px auto;
     height: 46px !important;
     padding: 0 18px;
     font-size: 17px;
@@ -87,6 +89,7 @@ body{
     background-color: black;
     display: block;
     width: 460px;
+    min-width: 220px;
     position: relative;
     height: 46px;
     padding: 0 18px;
@@ -94,7 +97,8 @@ body{
     border: 1px solid #ddd;
   }
   .quiz_split{
-width: 460px;
+    width: 80%;
+    min-width: 460px;
     position: relative;
     margin: 10px auto;
     display: flex;
