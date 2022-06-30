@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    font-size: 21px;
+  }
+  
+  .subtitleStickyStyle{
+    margin-left: 4%;
+    font-family: 'Suisse Regular';
+    font-size: 32px;
+    color: white;
+  }
+.quiz_grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+}
+.intro{
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+    align-self: center;
+}
+.quiz{
+    grid-row:1;
+    grid-column: 1;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.button{
+    transition: all .15s ease;
+    height: auto;
+    color: white;
+  }
+  .button > h3{
+    border-bottom: 1.2px solid currentColor;
+    padding-bottom: 5px;
+    color: white;
+    width: 275px;
+    font-size: 32px;
+    transition: all .15s ease;
+    cursor: pointer;
+  }
+  .responses{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+  .button > h3:hover{
+    color: grey;
+    transition: all .15s ease;
+  }
+  .quiz_opened{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .quiz_blur{
+    filter: blur(10px);
+  }
+  input{
+    color: white;
+    background-color: black;
+    display: block;
+    width: 460px;
+    position: relative;
+    height: 46px !important;
+    padding: 0 18px;
+    font-size: 17px;
+    border: 1px solid #ddd;
+  }
+  select{
+    color: white;
+    background-color: black;
+    display: block;
+    width: 460px;
+    position: relative;
+    height: 46px;
+    padding: 0 18px;
+    font-size: 17px;
+    border: 1px solid #ddd;
+  }
+  .quiz_split{
+width: 460px;
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+  .quiz_split > input{
+    display: inline-block;
+    width: 220px;
+    margin: 0;
+  }

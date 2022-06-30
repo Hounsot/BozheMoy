@@ -316,6 +316,9 @@
     .logo_and_toggle > a{
         align-self: center;
     }
+    .goods > img{
+      max-width: 100%;
+    }  
 }
 @media screen and (max-width: 414px){
   .goods{
