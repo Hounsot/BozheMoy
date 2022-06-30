@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.background{
+    height: 100vh;
+}
+.videoBG{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h1{
+    position: absolute;
+    top: 60vh;
+    width: 100%;
+    text-align: center;
+    font-family: 'Suisse Regular';
+    font-size: 6vw;
+    color: white;
+}

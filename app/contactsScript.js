@@ -2,6 +2,11 @@ $(document).ready(function(){
     $('.button').click(function(){
         $('.quiz').toggleClass('quiz_opened');
         $('.intro').toggleClass('quiz_blur');
-        $('header').toggleClass('quiz_blur')
+        $('header').toggleClass('quiz_blur');
     })
+    $(".toggle").click(function(){
+        $(".toggle").toggleClass("open_menu");
+        $(".default_navigation").toggleClass("open_navigation");
+        $(".quiz_grid").toggleClass("open_navigation_blur")
+      })    
 })
